@@ -11,7 +11,8 @@
 `array_filter($errors)`
 
 `explode(',', $pizzas[0]['ingredients'])`: spit string into array by same character
-=============================================
+
+
 **Step to get data from database using mysqli:**
 
 - Step 1: connect to database and check connection 
@@ -28,7 +29,8 @@
 - Step 5: free data from memory and close connect
         mysqli_free_result($result);
         mysqli_close($conn);
-=============================================
+
+
 **CRUD and practice** 
 - CREATE -> READ -> UPDATE -> DELETE
 

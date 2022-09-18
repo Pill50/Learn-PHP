@@ -13,6 +13,7 @@
 `explode(',', $pizzas[0]['ingredients'])`: spit string into array by same character
 
 # Step to get data from database using mysqli:
+
 **Step 1**: connect to database and check connection 
         $conn = mysqli_connect('localhost', 'user_name', 'user_password', 'database_name');
         if(!conn) {
@@ -29,21 +30,21 @@
         mysqli_close($conn);
 =============================================
 # CRUD and practice 
-CREATE -> READ -> UPDATE -> DELETE
+- CREATE -> READ -> UPDATE -> DELETE
 
-$conn = mysqli_connect(loccalhost, $username, $pw, $db_name);
-if(!$conn) {
+- $conn = mysqli_connect(loccalhost, $username, $pw, $db_name);
+- if(!$conn) {
         echo "error;
 } 
 
-$sql = "SELECT * FROM table_name WHERE "condition"";
-$sql = "INSERT INTO table_name(xyz) VALUE(xyz);
-#sql = "DELETE FROM table_name WHERE sth";
+- $sql = "SELECT * FROM table_name WHERE "condition"";
+- $sql = "INSERT INTO table_name(xyz) VALUE(xyz);
+- #sql = "DELETE FROM table_name WHERE sth";
 
-$result = mysqli_query($conn, $sql);
+- $result = mysqli_query($conn, $sql);
 
-$array = mysqli_fetch_all($result, MYSQLI_ASSOC);
-$array1 = mysqli_fetch_assoc($result);
+- $array = mysqli_fetch_all($result, MYSQLI_ASSOC);
+- $array1 = mysqli_fetch_assoc($result);
 
 mysqli_free_result($result);
 mysqli_close($conn);
